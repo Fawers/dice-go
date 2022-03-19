@@ -30,3 +30,26 @@ interfaces, I had to come up with an example why one would use interfaces and
 how one would use different structs to implement their methods. Dice came to
 mind. Maybe someone out there may want to use this lib to program a Yahtzee
 game in Go?
+
+# CLI Usage
+```
+$ go build main.go args.go 
+$ ./main 
+Usage:
+        ./main FACES
+        ./main DIE_KIND FACES
+        ./main DIE_KIND FACES NUM_ROLLS
+WHERE:
+        FACES is the max value of a die.
+        DIE_KIND is the kind of a die. Valid kinds are:
+          1 - 1-based die
+          z - 0-based die
+          L - loaded die
+        NUM_ROLLS is how many times the die will be rolled.
+
+Examples:
+        ./main 6
+        ./main 1 6
+        ./main 1 6 1
+        These will roll a die once and yield a number between 1 and 6.
+```
