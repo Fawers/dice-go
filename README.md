@@ -24,14 +24,14 @@ func main() {
 | 1-based die | A die whose rollings yield any number between 1 and its max value. A 6 faced 1 based die will yield numbers between 1 and 6. |
 | loaded die | A loaded/weighted die that always yields the same number. |
 
-# Inspiration
+## Inspiration
 I was teaching Go to some of my students. While teaching types, structs and
 interfaces, I had to come up with an example why one would use interfaces and
 how one would use different structs to implement their methods. Dice came to
 mind. Maybe someone out there may want to use this lib to program a Yahtzee
 game in Go?
 
-# CLI Usage
+## CLI Usage
 ```
 $ go build main.go args.go 
 $ ./main 
